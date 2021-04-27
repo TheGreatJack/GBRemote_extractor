@@ -26,7 +26,7 @@ def main():
 		
 		data.append(list(record.values()))
 
-	dfObj=pd.DataFrame(data,columns=['GBSeq_locus', 'GBSeq_length', 'GBSeq_strandedness', 'GBSeq_moltype', 'GBSeq_topology', 'GBSeq_division', 'GBSeq_source', 'GBSeq_organism', 'GBSeq_taxonomy', 'GBSeq_sequence','GB_A_count','GB_A_count','GB_A_count','GB_A_count','GBProtein_translation'])
+	dfObj=pd.DataFrame(data,columns=['GBSeq_locus', 'GBSeq_length', 'GBSeq_strandedness', 'GBSeq_moltype', 'GBSeq_topology', 'GBSeq_division', 'GBSeq_source', 'GBSeq_organism', 'GBSeq_taxonomy', 'GBSeq_sequence','GB_A_count','GB_T_count','GB_G_count','GB_C_count','GBProtein_translation'])
 
 	dfObj.to_csv("final_data.csv",sep='\t')
 
